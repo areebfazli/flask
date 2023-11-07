@@ -5,6 +5,11 @@ import os
 app = Flask(__name__)
 CORS(app)  # This will enable CORS for all routes
 
+@app.route('/')
+def hello_world():
+
+    return 'Hello, World!'
+
 @app.route('/audio', methods=['POST'])
 def save_audio():
     try:
