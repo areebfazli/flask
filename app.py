@@ -22,5 +22,5 @@ def save_audio():
     except Exception as e:
         return {"status": "error", "message": str(e)}, 400
 
-if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0',port=7001)
+# if __name__ == '__main__':
+#     app.run(debug=True, host='0.0.0.0',port=7001)
