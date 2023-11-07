@@ -9,10 +9,10 @@ CORS(app)  # This will enable CORS for all routes
 def save_audio():
     try:
         file = request.files['file']
-        filename = file.filename
-        print("Current Working Directory: ", os.getcwd())
-        filepath = os.path.join("C:/Users/Areeb/python/ova", filename) # Modify this path as necessary
-        file.save(filepath)
+        # filename = file.filename
+        # print("Current Working Directory: ", os.getcwd())
+        # filepath = os.path.join("C:/Users/Areeb/python/ova", filename) # Modify this path as necessary
+        # file.save(filepath)
         return {"status": "success", "message": "File saved successfully."}, 200
     except Exception as e:
         return {"status": "error", "message": str(e)}, 400
